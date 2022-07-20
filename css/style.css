@@ -8,7 +8,9 @@ body{
 
 main{
     display: flex;
+    align-items: flex-start;
     gap: 2em;
+    margin-top: 2em;
     
 }
 
@@ -20,15 +22,78 @@ main{
     align-items: center;
 }
 
-.text-container h1{
+.text-container h1, .text-container h4{
     color: #7190c9;
     font-weight: bold;
-    margin-bottom: 0.7em;
+    margin-bottom: 1em;
+}
+
+.display-2{
+    margin-top: 1em;
+    font-weight: bold !important;
+    color: #0099DD;
 }
 
 #demo{
-    margin-top: 2em !important;
     width: 40vw;
+}
+
+.thanksMsg, .text-msg{
+    display: none;
+}
+
+.donate{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.donate img{
+    width: 300px;
+    height: auto;
+}
+
+.donation{
+    display: block;
+    justify-content: center;
+}
+.donation input{
+    height: 2em;
+}
+
+.donation button{
+    font-size: 20px;
+}
+
+.contact{
+    margin: auto;
+}
+
+
+.aboutUs{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+.text-about{
+    display: flex;
+    font-size: 1.3em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.text-about h1{
+    color: #7190c9;
+    font-weight: 600;
+}
+
+.aboutUs-img img{
+    width: 600px;
+    height: auto;
+    border-radius: 0.5em;
 }
 
 .carousel-item img{
@@ -63,6 +128,7 @@ ul:first-child img{
 ul:nth-child(2){
     justify-content: center;
     margin-left: auto;
+    margin-right: 1em;
 }
 
 
@@ -70,7 +136,7 @@ nav ul li a{
     text-decoration: none;
     padding: 15px 17px;
     font-size: 22px;
-    color: #b528bc;
+    color: #494791;
 }
 
 footer{
@@ -98,12 +164,13 @@ footer .footer-logo img{
         flex-direction: column;
     }
 
-    #demo{
+    #demo, .aboutUs{
         margin: 0px auto;
         width: 100vw;
+        flex-wrap: wrap;
     }
 
-    #demo img{
+    #demo img, .aboutUs-img img{
         width: 100vw;
         height: auto;
     }
